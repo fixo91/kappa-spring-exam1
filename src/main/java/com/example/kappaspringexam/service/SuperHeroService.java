@@ -44,7 +44,7 @@ public class SuperHeroService {
 
     private void validateSuperHero(SuperHero superHero) {
         if (!StringUtils.hasText(superHero.getName())) {
-            throw new ValidationException("Missing name");
+            throw new ValidationException("Hianyzo nev!");
         }
         if (!superHero.getUniverse().equals(Universe.DC) && !superHero.getUniverse().equals(Universe.MARVEL)) {
             throw new ValidationException("Add meg hogy az Universe DC vagy MARVEL!");

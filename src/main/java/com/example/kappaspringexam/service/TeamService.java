@@ -57,7 +57,7 @@ public class TeamService {
             throw new ValidationException("Adjon meg Kind-ot!");
         }
         if (!team.getKind().equals(Kind.VILLAIN) && !team.getKind().equals(Kind.HERO)) {
-            throw new ValidationException("Add meg hogy az Universe DC vagy MARVEL!");
+            throw new ValidationException("Add meg hogy a Team VILLAIN vagy HERO!");
         }
     }
 }
